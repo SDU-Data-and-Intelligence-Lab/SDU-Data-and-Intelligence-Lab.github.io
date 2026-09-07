@@ -13,7 +13,8 @@ What is included:
 - publications.html: separate publications page
 - people.html: separate people page
 - projects.html: empty placeholder projects page
-- assets/hero-alsion.png: the main landing photo
+- assets/hero-alsion-mono.png: the monochrome landing photo
+- assets/hero-alsion.png: the original color landing photo
 - placeholder logo and avatar assets
 - plain HTML and CSS so it can be hosted directly on GitHub Pages
 
