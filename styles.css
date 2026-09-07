@@ -60,7 +60,7 @@ h1 {
 
 .hero-copy h1 {
   font-size: clamp(2.45rem, 5.2vw, 4.2rem);
-  max-width: 13ch;
+  max-width: none;
 }
 
 h2 {
@@ -266,7 +266,7 @@ h3 {
 }
 
 .research-item {
-  padding: 1.15rem 0;
+  padding: 0.95rem 0;
   border-bottom: 1px solid var(--line);
 }
 
@@ -411,5 +411,11 @@ h3 {
 
   .site-nav {
     font-size: 0.92rem;
+  }
+}
+
+@media (min-width: 641px) {
+  .hero-copy h1 {
+    white-space: nowrap;
   }
 }
