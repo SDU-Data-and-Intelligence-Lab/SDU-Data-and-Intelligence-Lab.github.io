@@ -12,7 +12,7 @@ What is included:
 - index.html: landing page named Data & Intelligence Lab
 - publications.html: separate publications page
 - people.html: separate people page
-- projects.html: empty placeholder projects page
+- projects.html: funded projects page
 - assets/hero-alsion-mono.png: the monochrome landing photo
 - assets/hero-alsion.png: the original color landing photo
 - placeholder logo and avatar assets

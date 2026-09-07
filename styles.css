@@ -368,6 +368,41 @@ h3 {
   align-items: start;
 }
 
+.project-grid {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.project-card {
+  display: grid;
+  gap: 0.75rem;
+  padding: 1.1rem;
+  border: 1px solid var(--line);
+  background: var(--bg);
+}
+
+.project-card h3 {
+  max-width: none;
+}
+
+.project-meta {
+  font-size: 0.84rem;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+.project-card p {
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+.project-link {
+  font-weight: 600;
+  width: fit-content;
+}
+
 .site-footer {
   border-top: 1px solid var(--line);
   padding: 1.1rem 0 2rem;
@@ -387,7 +422,8 @@ h3 {
   }
 
   .hero-grid,
-  .join-grid {
+  .join-grid,
+  .project-grid {
     grid-template-columns: 1fr;
   }
 
