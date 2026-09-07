@@ -1,20 +1,7 @@
-<svg width="192" height="192" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">Data and Intelligence Lab mark</title>
-  <desc id="desc">Abstract placeholder logo mark for the lab</desc>
-  <defs>
-    <linearGradient id="g1" x1="28" y1="24" x2="164" y2="170" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#0F766E"/>
-      <stop offset="1" stop-color="#B35D2E"/>
-    </linearGradient>
-    <linearGradient id="g2" x1="48" y1="48" x2="144" y2="144" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#FFF9F2"/>
-      <stop offset="1" stop-color="#F1E7D8"/>
-    </linearGradient>
-  </defs>
-  <rect x="12" y="12" width="168" height="168" rx="40" fill="url(#g1)"/>
-  <rect x="34" y="34" width="124" height="124" rx="30" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.38)" stroke-width="2"/>
-  <path d="M60 128L132 60" stroke="url(#g2)" stroke-width="12" stroke-linecap="round"/>
-  <circle cx="64" cy="64" r="12" fill="url(#g2)"/>
-  <circle cx="128" cy="128" r="12" fill="url(#g2)"/>
-  <circle cx="96" cy="96" r="14" fill="#132126" fill-opacity="0.2"/>
+<svg width='96' height='96' viewBox='0 0 96 96' fill='none' xmlns='http://www.w3.org/2000/svg' role='img' aria-labelledby='title desc'>
+  <title id='title'>Data and Intelligence Lab mark</title>
+  <desc id='desc'>Simple placeholder logo mark for the lab</desc>
+  <rect x='8' y='8' width='80' height='80' rx='20' fill='#F8F4EC' stroke='#151515' stroke-opacity='0.14'/>
+  <path d='M30 66V30H49C59 30 67 38 67 48C67 58 59 66 49 66H30Z' fill='#0E7069'/>
+  <circle cx='69' cy='48' r='6' fill='#151515' fill-opacity='0.9'/>
 </svg>
