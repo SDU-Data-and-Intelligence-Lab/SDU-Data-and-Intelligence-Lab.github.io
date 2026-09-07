@@ -1,0 +1,23 @@
+<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Avatar placeholder</title>
+  <desc id="desc">Abstract placeholder portrait for a lab member</desc>
+  <defs>
+    <linearGradient id="a1" x1="140" y1="120" x2="660" y2="680" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F766E"/>
+      <stop offset="1" stop-color="#B35D2E"/>
+    </linearGradient>
+    <radialGradient id="a2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(400 260) rotate(90) scale(330)">
+      <stop stop-color="#FFF9F2"/>
+      <stop offset="1" stop-color="#F1E7D8"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="800" rx="400" fill="url(#a1)"/>
+  <circle cx="400" cy="400" r="286" fill="url(#a2)" fill-opacity="0.16"/>
+  <circle cx="400" cy="302" r="118" fill="#F8F2E9" fill-opacity="0.88"/>
+  <path d="M234 632C248 506 316 430 400 430C484 430 552 506 566 632" fill="#F8F2E9" fill-opacity="0.88"/>
+  <path d="M300 314C340 268 450 268 500 314" stroke="#132126" stroke-opacity="0.16" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="338" cy="336" r="10" fill="#132126" fill-opacity="0.2"/>
+  <circle cx="462" cy="336" r="10" fill="#132126" fill-opacity="0.2"/>
+  <rect x="188" y="190" width="424" height="424" rx="212" stroke="rgba(255,255,255,0.22)" stroke-width="8"/>
+  <text x="400" y="718" text-anchor="middle" fill="#F8F2E9" fill-opacity="0.9" font-family="Arial, sans-serif" font-size="38" font-weight="700">Portrait</text>
+</svg>
