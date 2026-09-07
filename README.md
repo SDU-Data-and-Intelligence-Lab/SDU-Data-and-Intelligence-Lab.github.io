@@ -9,11 +9,12 @@ This is a GitHub project site, so the default URL includes the account name and 
 If you want a URL without your GitHub username, the usual option is a custom domain.
 
 What is included:
-- index.html: landing page named Introducing the lab
+- index.html: landing page named Data & Intelligence Lab
 - publications.html: separate publications page
 - people.html: separate people page
 - projects.html: empty placeholder projects page
-- placeholder logo, hero image, and avatar assets
+- assets/hero-alsion.png: the main landing photo
+- placeholder logo and avatar assets
 - plain HTML and CSS so it can be hosted directly on GitHub Pages
 
 Design notes:
@@ -23,8 +24,8 @@ Design notes:
 
 Replace the placeholders:
 - assets/brand-mark.svg is the temporary logo mark
-- assets/hero-placeholder.svg is the hero illustration
 - assets/avatar-placeholder.svg is the portrait placeholder
+- assets/hero-placeholder.svg remains available as a fallback hero illustration
 
 Publish notes:
 - push changes to main when you update the site

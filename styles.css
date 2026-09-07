@@ -60,7 +60,7 @@ h1 {
 
 .hero-copy h1 {
   font-size: clamp(2.45rem, 5.2vw, 4.2rem);
-  max-width: 12ch;
+  max-width: 13ch;
 }
 
 h2 {
@@ -195,13 +195,13 @@ h3 {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(280px, 0.95fr);
-  gap: 2rem;
-  align-items: center;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.5rem;
+  align-items: start;
 }
 
 .hero-copy {
-  padding-block: 1rem;
+  padding-block: 1rem 0;
 }
 
 .eyebrow {
@@ -215,7 +215,7 @@ h3 {
 
 .lede {
   margin-top: 1.25rem;
-  max-width: 38ch;
+  max-width: 44ch;
   font-size: 1.14rem;
   line-height: 1.7;
   color: var(--muted);
@@ -235,14 +235,20 @@ h3 {
 
 .hero-figure img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 3 / 1;
   object-fit: cover;
   background: var(--panel);
   border: 1px solid var(--line);
 }
 
+.hero-figure figcaption {
+  margin-top: 0.65rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
 .page-lead,
-.page-intro,
 .join-panel {
   max-width: 62ch;
   display: grid;
@@ -255,18 +261,13 @@ h3 {
 .research-list {
   margin-top: 1.5rem;
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr;
   border-top: 1px solid var(--line);
 }
 
 .research-item {
-  padding: 1.15rem 1.15rem 1.25rem 0;
+  padding: 1.15rem 0;
   border-bottom: 1px solid var(--line);
-}
-
-.research-item:nth-child(2n) {
-  padding-left: 1.15rem;
-  padding-right: 0;
 }
 
 .research-item p {
@@ -388,16 +389,6 @@ h3 {
 
   .site-nav {
     gap: 0.75rem 1rem;
-  }
-
-  .research-list {
-    grid-template-columns: 1fr;
-  }
-
-  .research-item,
-  .research-item:nth-child(2n) {
-    padding-left: 0;
-    padding-right: 0;
   }
 
   .entry-row {
