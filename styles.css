@@ -403,6 +403,54 @@ h3 {
   width: fit-content;
 }
 
+
+
+.publication-list {
+  margin-top: 1.5rem;
+  display: grid;
+  gap: 2.5rem;
+}
+
+.publication-year-block {
+  display: grid;
+  gap: 1rem;
+}
+
+.publication-year {
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--muted);
+}
+
+.publication-card {
+  display: grid;
+  gap: 0.75rem;
+  padding: 1.1rem;
+  border: 1px solid var(--line);
+  background: var(--bg);
+}
+
+.publication-card h3 {
+  max-width: none;
+}
+
+.publication-meta {
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+.publication-card p {
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+.publication-link {
+  font-weight: 600;
+  width: fit-content;
+}
+
 .site-footer {
   border-top: 1px solid var(--line);
   padding: 1.1rem 0 2rem;

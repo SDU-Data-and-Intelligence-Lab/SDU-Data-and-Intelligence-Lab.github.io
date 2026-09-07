@@ -10,7 +10,7 @@ If you want a URL without your GitHub username, the usual option is a custom dom
 
 What is included:
 - index.html: landing page named Data & Intelligence Lab
-- publications.html: separate publications page
+- publications.html: separate recent publications page
 - people.html: separate people page
 - projects.html: funded projects page
 - assets/hero-alsion-mono.png: the monochrome landing photo
