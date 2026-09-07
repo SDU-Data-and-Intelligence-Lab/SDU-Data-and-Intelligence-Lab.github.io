@@ -59,8 +59,9 @@ h1 {
 }
 
 .hero-copy h1 {
-  font-size: clamp(2.45rem, 5.2vw, 4.2rem);
+  font-size: clamp(1.35rem, 4.8vw, 3.4rem);
   max-width: none;
+  white-space: nowrap;
 }
 
 h2 {
@@ -259,15 +260,23 @@ h3 {
 }
 
 .research-list {
-  margin-top: 1.5rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  border-top: 1px solid var(--line);
+  margin-top: 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  border-top: none;
 }
 
 .research-item {
-  padding: 0.95rem 0;
-  border-bottom: 1px solid var(--line);
+  padding: 0.7rem 0.95rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--bg);
+}
+
+.research-item h3 {
+  font-size: 0.95rem;
+  line-height: 1.2;
 }
 
 .research-item p {
@@ -365,9 +374,8 @@ h3 {
 }
 
 .footer-inner {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
+  display: grid;
+  gap: 0.35rem;
   color: var(--muted);
   font-size: 0.92rem;
 }
@@ -381,10 +389,6 @@ h3 {
   .hero-grid,
   .join-grid {
     grid-template-columns: 1fr;
-  }
-
-  .footer-inner {
-    display: grid;
   }
 
   .site-nav {
@@ -408,14 +412,7 @@ h3 {
   h1 {
     font-size: clamp(2.8rem, 16vw, 4.3rem);
   }
-
   .site-nav {
     font-size: 0.92rem;
-  }
-}
-
-@media (min-width: 641px) {
-  .hero-copy h1 {
-    white-space: nowrap;
   }
 }
