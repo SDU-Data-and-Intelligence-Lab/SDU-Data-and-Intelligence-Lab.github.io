@@ -12,13 +12,14 @@ What is included:
 - index.html: landing page named Introducing the lab
 - publications.html: separate publications page
 - people.html: separate people page
+- projects.html: empty placeholder projects page
 - placeholder logo, hero image, and avatar assets
 - plain HTML and CSS so it can be hosted directly on GitHub Pages
 
 Design notes:
 - black, white, and gray palette
 - SDU branding guide names LL Brown Pro as the primary typeface; this build uses a close system sans fallback stack until a licensed webfont is provided
-- the navigation keeps the landing page separate from the bibliography and people pages
+- the navigation keeps the landing page separate from the bibliography, people, and projects pages
 
 Replace the placeholders:
 - assets/brand-mark.svg is the temporary logo mark
