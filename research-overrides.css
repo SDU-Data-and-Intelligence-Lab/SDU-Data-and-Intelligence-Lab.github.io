@@ -73,3 +73,24 @@
     padding: 1rem 0;
   }
 }
+.hero-copy {
+  padding-left: var(--subpage-indent);
+}
+.research-shell {
+  padding-left: var(--subpage-indent);
+}
+.container {
+  width: min(var(--max-width), calc(100% - 2rem));
+}
+.hero-copy {
+  max-width: none;
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem;
+  justify-items: stretch;
+  text-align: left;
+  color: var(--muted);
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
