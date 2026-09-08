@@ -403,47 +403,65 @@ h3 {
   width: fit-content;
 }
 
-
-
-.publication-list {
-  margin-top: 1.5rem;
-  display: grid;
-  gap: 2.5rem;
+.publication-archive {
+  padding-top: clamp(2.5rem, 5vw, 4rem);
 }
 
-.publication-year-block {
+.publication-shell {
+  width: min(1240px, calc(100% - 2rem));
+}
+
+.publication-year-row {
   display: grid;
-  gap: 1rem;
+  grid-template-columns: minmax(6rem, 8.5rem) minmax(0, 1fr);
+  gap: 2rem;
+  padding: 2.35rem 0;
+}
+
+.publication-year-row + .publication-year-row {
+  border-top: 1px solid var(--line);
+}
+
+.publication-year-panel {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 0.25rem;
+  padding-right: 1.5rem;
+  border-right: 1px solid var(--line);
 }
 
 .publication-year {
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   text-transform: uppercase;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.24em;
   color: var(--muted);
 }
 
-.publication-card {
+.publication-year-content {
   display: grid;
-  gap: 0.75rem;
-  padding: 1.1rem;
-  border: 1px solid var(--line);
-  background: var(--bg);
+  gap: 1.15rem;
 }
 
-.publication-card h3 {
+.publication-entry {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.publication-entry + .publication-entry {
+  border-top: 1px solid var(--line);
+  padding-top: 1.25rem;
+}
+
+.publication-entry h3 {
   max-width: none;
+  line-height: 1.25;
 }
 
 .publication-meta {
-  font-size: 0.9rem;
-  line-height: 1.55;
+  font-size: 0.92rem;
+  line-height: 1.65;
   color: var(--muted);
-}
-
-.publication-card p {
-  line-height: 1.7;
-  color: var(--muted);
+  max-width: 80ch;
 }
 
 .publication-link {
@@ -471,7 +489,8 @@ h3 {
 
   .hero-grid,
   .join-grid,
-  .project-grid {
+  .project-grid,
+  .publication-year-row {
     grid-template-columns: 1fr;
   }
 
@@ -485,6 +504,17 @@ h3 {
 
   .entry-label {
     padding-top: 0;
+  }
+
+  .publication-year-row {
+    gap: 0.9rem;
+  }
+
+  .publication-year-panel {
+    border-right: none;
+    border-bottom: 1px solid var(--line);
+    padding-right: 0;
+    padding-bottom: 0.85rem;
   }
 }
 
