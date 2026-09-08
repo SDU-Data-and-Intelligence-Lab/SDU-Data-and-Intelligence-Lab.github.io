@@ -261,26 +261,26 @@ h3 {
 
 .research-list {
   margin-top: 1.25rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.65rem;
-  border-top: none;
+  display: grid;
+  list-style: none;
+  padding: 0;
+  border-top: 1px solid var(--line);
 }
 
 .research-item {
-  padding: 0.7rem 0.95rem;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  background: var(--bg);
+  display: grid;
+  gap: 0.45rem;
+  padding: 1.15rem 0;
+  border-bottom: 1px solid var(--line);
 }
 
 .research-item h3 {
-  font-size: 0.95rem;
-  line-height: 1.2;
+  font-size: 1.08rem;
+  line-height: 1.25;
 }
 
 .research-item p {
-  margin-top: 0.65rem;
+  max-width: 62ch;
   line-height: 1.7;
   color: var(--muted);
 }
