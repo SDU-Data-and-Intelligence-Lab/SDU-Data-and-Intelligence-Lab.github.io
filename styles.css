@@ -450,6 +450,10 @@ h3 {
   gap: 1rem;
 }
 
+.people-roster--three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .person-card {
   display: grid;
   overflow: hidden;
