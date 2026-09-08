@@ -436,6 +436,7 @@ h3 {
   align-items: flex-start;
   padding-top: 0.25rem;
   padding-right: 1.5rem;
+  padding-left: 0.75rem;
   border-right: 1px solid var(--line);
   text-transform: uppercase;
   letter-spacing: 0.24em;
@@ -670,6 +671,7 @@ h3 {
     border-right: none;
     border-bottom: 1px solid var(--line);
     padding-right: 0;
+    padding-left: 0;
     padding-bottom: 0.85rem;
   }
 
