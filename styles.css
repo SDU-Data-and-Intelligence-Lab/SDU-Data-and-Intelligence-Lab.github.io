@@ -249,7 +249,20 @@ h3 {
   color: var(--muted);
 }
 
-.page-lead,
+.page-lead {
+  max-width: none;
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem;
+  padding-block: 1rem 0;
+  justify-items: stretch;
+  text-align: left;
+  color: var(--muted);
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
 .join-panel {
   max-width: 62ch;
   display: grid;
@@ -257,6 +270,18 @@ h3 {
   color: var(--muted);
   line-height: 1.8;
   font-size: 1.05rem;
+}
+
+.page-lead h1 {
+  font-size: clamp(1.35rem, 4.8vw, 3.4rem);
+  max-width: none;
+  white-space: nowrap;
+  color: var(--ink);
+}
+
+.page-lead .lede,
+.page-lead .meta {
+  max-width: 44ch;
 }
 
 .research-shell {
@@ -419,7 +444,6 @@ h3 {
 
 .page-publications .page-lead {
   max-width: none;
-  justify-items: start;
   text-align: left;
 }
 
