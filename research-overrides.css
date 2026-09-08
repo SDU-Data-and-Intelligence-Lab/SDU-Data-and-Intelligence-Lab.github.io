@@ -73,9 +73,6 @@
     padding: 1rem 0;
   }
 }
-.hero-copy {
-  padding-left: var(--subpage-indent);
-}
 .research-shell {
   padding-left: var(--subpage-indent);
 }
@@ -83,27 +80,22 @@
   width: min(var(--max-width), calc(100% - 2rem));
 }
 .hero-copy {
-  max-width: none;
-  width: 100%;
+  max-width: 720px;
+  width: min(720px, 100%);
+  margin-inline: auto;
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   gap: 1rem;
-  justify-items: stretch;
-  text-align: left;
+  justify-items: center;
+  text-align: center;
   color: var(--muted);
   line-height: 1.8;
   font-size: 1.05rem;
-}
-.hero-copy {
-  padding-left: 0;
-}
-.research-shell {
-  padding-left: 0;
+  padding-inline: 0;
 }
 
-.hero-copy,
-.research-shell {
-  padding-left: var(--subpage-indent);
+.hero-copy .lede {
+  margin-inline: auto;
 }
 
 /* keep landing-page alignment overrides last */

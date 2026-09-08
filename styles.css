@@ -251,15 +251,16 @@ h3 {
 }
 
 .page-lead {
-  max-width: none;
-  width: 100%;
+  max-width: 720px;
+  width: min(720px, 100%);
+  margin-inline: auto;
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   gap: 1rem;
   padding-block: 1rem 0;
-  padding-left: var(--subpage-indent);
-  justify-items: stretch;
-  text-align: left;
+  padding-inline: 0;
+  justify-items: center;
+  text-align: center;
   color: var(--muted);
   line-height: 1.8;
   font-size: 1.05rem;
@@ -284,6 +285,7 @@ h3 {
 .page-lead .lede,
 .page-lead .meta {
   max-width: 44ch;
+  margin-inline: auto;
 }
 
 .research-shell {
@@ -545,11 +547,6 @@ h3 {
   display: inline-block;
 }
 
-.page-publications .page-lead {
-  max-width: none;
-  text-align: left;
-}
-
 .page-publications .page-lead h1 {
   font-size: clamp(1.35rem, 4.8vw, 3.4rem);
   max-width: none;
@@ -703,41 +700,6 @@ h3 {
     font-size: 0.92rem;
   }
 }
-.page-lead,
-people-shell,
-publication-shell,
-research-shell {
-  padding-left: 0;
-}
-.page-lead h1,
-.hero-copy h1,
-.research-shell > h2,
-.publication-year,
-.people-band-label {
-  color: var(--ink);
-}
-.page-lead,
-.people-shell,
-.publication-shell,
-.research-shell {
-  padding-left: 0;
-}
-.page-lead h1,
-.hero-copy h1,
-.research-shell > h2,
-.publication-year,
-.people-band-label {
-  color: var(--ink);
-}
-
-.page-lead,
-.people-shell,
-.publication-shell,
-.research-shell,
-.hero-copy {
-  padding-left: var(--subpage-indent);
-}
-
 .page-lead h1,
 .hero-copy h1,
 .research-shell > h2,
