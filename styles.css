@@ -703,3 +703,29 @@ h3 {
     font-size: 0.92rem;
   }
 }
+.page-lead,
+people-shell,
+publication-shell,
+research-shell {
+  padding-left: 0;
+}
+.page-lead h1,
+.hero-copy h1,
+.research-shell > h2,
+.publication-year,
+.people-band-label {
+  color: var(--ink);
+}
+.page-lead,
+.people-shell,
+.publication-shell,
+.research-shell {
+  padding-left: 0;
+}
+.page-lead h1,
+.hero-copy h1,
+.research-shell > h2,
+.publication-year,
+.people-band-label {
+  color: var(--ink);
+}
