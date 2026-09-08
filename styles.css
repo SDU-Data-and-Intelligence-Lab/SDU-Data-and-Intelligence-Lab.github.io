@@ -398,9 +398,9 @@ h3 {
   color: var(--muted);
 }
 
-.project-link {
-  font-weight: 600;
-  width: fit-content;
+.card-title-link {
+  color: inherit;
+  display: inline-block;
 }
 
 .publication-archive {
@@ -463,12 +463,7 @@ h3 {
   color: var(--muted);
   max-width: 80ch;
 }
-
-.publication-link {
-  font-weight: 600;
-  width: fit-content;
-}
-
+`r`n
 .site-footer {
   border-top: 1px solid var(--line);
   padding: 1.1rem 0 2rem;
