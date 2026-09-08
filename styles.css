@@ -729,3 +729,21 @@ research-shell {
 .people-band-label {
   color: var(--ink);
 }
+
+.page-lead,
+.people-shell,
+.publication-shell,
+.research-shell,
+.hero-copy {
+  padding-left: var(--subpage-indent);
+}
+
+.page-lead h1,
+.hero-copy h1,
+.research-shell > h2,
+.publication-year,
+.people-band-label {
+  color: var(--ink);
+}
+
+/* keep final alignment overrides last */

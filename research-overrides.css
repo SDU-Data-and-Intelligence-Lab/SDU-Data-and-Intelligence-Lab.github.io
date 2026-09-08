@@ -100,3 +100,10 @@
 .research-shell {
   padding-left: 0;
 }
+
+.hero-copy,
+.research-shell {
+  padding-left: var(--subpage-indent);
+}
+
+/* keep landing-page alignment overrides last */
