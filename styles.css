@@ -440,7 +440,7 @@ h3 {
   border-right: 1px solid var(--line);
   text-transform: uppercase;
   letter-spacing: 0.24em;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 700;
   color: var(--muted);
 }
