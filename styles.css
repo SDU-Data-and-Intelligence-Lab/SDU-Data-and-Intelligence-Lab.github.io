@@ -570,14 +570,14 @@ h3 {
 }
 
 .publication-shell {
-  width: min(1240px, calc(100% - 2rem));
+  width: min(1400px, calc(100% - 2rem));
   padding-left: var(--subpage-indent);
 }
 
 .publication-year-row {
   display: grid;
-  grid-template-columns: minmax(4.5rem, 5.5rem) minmax(0, 1fr);
-  gap: 1.25rem;
+  grid-template-columns: minmax(4rem, 4.75rem) minmax(0, 1fr);
+  gap: 0.75rem;
   padding: 2.35rem 0;
 }
 
@@ -589,7 +589,7 @@ h3 {
   display: flex;
   align-items: flex-start;
   padding-top: 0.25rem;
-  padding-right: 1.5rem;
+  padding-right: 0.75rem;
   border-right: 1px solid var(--line);
 }
 
@@ -643,14 +643,14 @@ h3 {
 
 .publication-direction-row {
   display: grid;
-  grid-template-columns: minmax(13rem, 19rem) minmax(0, 1fr);
-  gap: 2rem;
+  grid-template-columns: minmax(10.5rem, 13rem) minmax(0, 1fr);
+  gap: 1.1rem;
   padding: 1.7rem 0;
   border-top: 1px solid var(--line);
 }
 
 .publication-direction-panel {
-  padding-right: 1.5rem;
+  padding-right: 0.75rem;
   border-right: 1px solid var(--line);
 }
 
