@@ -16,9 +16,10 @@
   }
 
   function renderMember(items) {
-    const target = document.querySelector('.archive-list');
+    const aboutView = mode === 'about';
+    const target = document.querySelector(aboutView ? '.profile-publications-list' : '.archive-list');
     if (!target) return;
-    target.innerHTML = sortPublications(items).map((item) =>
+    target.innerHTML = sortPublications(items).slice(0, 3).map((item) =>
       '<article class="archive-item">' +
       '<h2><a href="' + escapeHtml(item.url) + '">' + escapeHtml(item.title) + '</a></h2>' +
       '<p>' + escapeHtml(item.authors) + '</p>' +
@@ -33,7 +34,7 @@
   function renderArchive(items) {
     const target = document.querySelector('.publication-shell');
     if (!target) return;
-    const unique = Array.from(new Map(items.map((item) => [item.url, item])).values());
+    const unique = Array.from(new Map(items.filter((item) => Number(item.year) >= 2024).map((item) => [item.url, item])).values());
     const years = [...new Set(unique.map((item) => Number(item.year)))].sort((a, b) => b - a);
     target.innerHTML = years.map((year) =>
       '<section class="publication-year-row">' +

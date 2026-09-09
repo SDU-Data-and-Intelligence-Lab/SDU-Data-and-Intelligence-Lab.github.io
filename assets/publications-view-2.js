@@ -38,7 +38,7 @@
   }
 
   Promise.all(members.map(loadMember)).then((lists) => {
-    const unique = Array.from(new Map(lists.flat().map((item) => [item.url, item])).values());
+    const unique = Array.from(new Map(lists.flat().filter((item) => Number(item.year) >= 2024).map((item) => [item.url, item])).values());
     const target = document.querySelector('.publication-direction-shell');
     if (!target) return;
     target.innerHTML = directions.map((direction) => {
