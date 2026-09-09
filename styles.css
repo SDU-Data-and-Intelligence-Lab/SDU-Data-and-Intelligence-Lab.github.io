@@ -576,8 +576,8 @@ h3 {
 
 .publication-year-row {
   display: grid;
-  grid-template-columns: minmax(6rem, 8.5rem) minmax(0, 1fr);
-  gap: 2rem;
+  grid-template-columns: minmax(4.5rem, 5.5rem) minmax(0, 1fr);
+  gap: 1.25rem;
   padding: 2.35rem 0;
 }
 
@@ -618,6 +618,15 @@ h3 {
 .publication-entry h3 {
   max-width: none;
   line-height: 1.25;
+  font-weight: 500;
+}
+
+.publication-entry h3 a {
+  text-decoration: none;
+}
+
+.publication-entry h3 a:hover {
+  text-decoration: underline;
 }
 
 .publication-meta {
