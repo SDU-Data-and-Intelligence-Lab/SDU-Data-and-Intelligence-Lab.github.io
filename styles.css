@@ -866,3 +866,20 @@ h3 {
     padding-left: calc(var(--subpage-indent) + 4rem);
   }
 }
+
+.publication-shell,
+.publication-direction-shell,
+.people-shell,
+.page-projects .section-divider > .container {
+  width: min(1240px, calc(100% - 2rem));
+  padding-left: var(--subpage-indent);
+}
+
+@media (min-width: 901px) {
+  .publication-shell,
+  .publication-direction-shell,
+  .people-shell,
+  .page-projects .section-divider > .container {
+    padding-left: calc(var(--subpage-indent) + 4rem);
+  }
+}
