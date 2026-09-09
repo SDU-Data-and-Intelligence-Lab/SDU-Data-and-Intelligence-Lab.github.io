@@ -655,9 +655,49 @@ h3 {
 }
 
 .publication-direction-panel h2 {
-  font-size: 1.05rem;
-  line-height: 1.25;
+  font-size: 1.16rem;
+  line-height: 1.22;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
   color: var(--muted);
+}
+
+.publication-list-year {
+  padding: 1.35rem 0 1.8rem;
+  border-top: 1px solid var(--line);
+}
+
+.publication-list-year-label {
+  margin-bottom: 0.9rem;
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.publication-list-items {
+  display: grid;
+}
+
+.publication-list-entry {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.publication-list-entry h3 {
+  max-width: 100ch;
+  font-weight: 500;
+  line-height: 1.28;
+}
+
+.publication-list-entry h3 a {
+  text-decoration: none;
+}
+
+.publication-list-entry h3 a:hover {
+  text-decoration: underline;
 }
 
 .publication-direction-content {
