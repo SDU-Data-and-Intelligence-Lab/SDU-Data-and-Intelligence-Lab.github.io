@@ -860,3 +860,9 @@ h3 {
     width: min(1240px, calc(100% - 1.25rem));
   }
 }
+
+@media (min-width: 901px) {
+  .page-lead {
+    padding-left: calc(var(--subpage-indent) + 2rem);
+  }
+}
