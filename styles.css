@@ -671,7 +671,7 @@ h3 {
 .publication-list-year-label {
   margin-bottom: 0.9rem;
   color: var(--muted);
-  font-size: 0.88rem;
+  font-size: 1rem;
   font-weight: 600;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -682,6 +682,8 @@ h3 {
 }
 
 .publication-list-entry {
+  display: grid;
+  gap: 0.7rem;
   padding: 1rem 0;
   border-bottom: 1px solid var(--line);
 }
@@ -703,6 +705,16 @@ h3 {
 .publication-direction-content {
   display: grid;
   gap: 1rem;
+}
+
+.publication-direction-content .publication-entry {
+  row-gap: 0.7rem;
+}
+
+@media (min-width: 901px) {
+  .publication-direction-row {
+    grid-template-columns: minmax(14rem, 18rem) minmax(0, 1fr);
+  }
 }
 
 .publication-entry {
