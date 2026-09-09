@@ -422,8 +422,8 @@ h3 {
 .people-band {
   display: grid;
   grid-template-columns: minmax(10rem, 13.5rem) minmax(0, 1fr);
-  gap: 2rem;
-  padding: 2.35rem 0;
+  gap: 2.75rem;
+  padding: 3.25rem 0;
   align-items: start;
 }
 
@@ -447,24 +447,26 @@ h3 {
 
 .people-roster {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  gap: 3.25rem 2.75rem;
 }
 
 .people-roster--three {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
 }
 
 .person-card {
-  display: grid;
-  overflow: hidden;
-  border: 1px solid var(--line);
-  background: var(--bg);
+  display: block;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
 }
 
 .person-portrait {
+  width: 8rem;
   aspect-ratio: 1 / 1;
+  display: block;
   overflow: hidden;
+  margin-bottom: 0.9rem;
   background: #f3f3f3;
 }
 
@@ -477,14 +479,14 @@ h3 {
 
 .person-card .person-body {
   display: grid;
-  gap: 0.55rem;
-  padding: 1rem 1.05rem 1.1rem;
+  gap: 0.4rem;
+  padding: 0;
 }
 
 .person-card .person-body h3 {
   max-width: none;
   margin: 0;
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   line-height: 1.2;
 }
 
@@ -496,7 +498,8 @@ h3 {
 
 .person-line {
   color: var(--muted);
-  line-height: 1.65;
+  font-size: 0.95rem;
+  line-height: 1.55;
 }
 
 .person-links {
@@ -676,7 +679,8 @@ h3 {
   }
 
   .people-roster {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    gap: 2.5rem 2rem;
   }
 
   .publication-year-row {
@@ -704,6 +708,10 @@ h3 {
   }
   .site-nav {
     font-size: 0.92rem;
+  }
+
+  .people-roster {
+    grid-template-columns: 1fr;
   }
 }
 .page-lead h1,
