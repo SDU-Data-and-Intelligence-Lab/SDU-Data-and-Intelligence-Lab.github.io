@@ -251,16 +251,16 @@ h3 {
 }
 
 .page-lead {
-  max-width: 720px;
-  width: min(720px, 100%);
-  margin-inline: auto;
+  max-width: none;
+  width: 100%;
+  margin-inline: 0;
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   gap: 1rem;
   padding-block: 1rem 0;
   padding-inline: 0;
-  justify-items: center;
-  text-align: center;
+  justify-items: start;
+  text-align: left;
   color: var(--muted);
   line-height: 1.8;
   font-size: 1.05rem;
@@ -285,7 +285,7 @@ h3 {
 .page-lead .lede,
 .page-lead .meta {
   max-width: 44ch;
-  margin-inline: auto;
+  margin-inline: 0;
 }
 
 .research-shell {
