@@ -841,12 +841,22 @@ h3 {
 /* keep final alignment overrides last */
 .hero-grid,
 .page-lead {
+  width: min(1240px, calc(100% - 2rem));
+  margin-inline: auto;
   padding-left: var(--subpage-indent);
 }
 
 @media (max-width: 900px) {
   .hero-grid,
   .page-lead {
-    padding-left: 0;
+    width: min(1240px, calc(100% - 2rem));
+    padding-left: var(--subpage-indent);
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-grid,
+  .page-lead {
+    width: min(1240px, calc(100% - 1.25rem));
   }
 }
