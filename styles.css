@@ -490,6 +490,36 @@ h3 {
   line-height: 1.2;
 }
 
+.person-heading {
+  min-width: 0;
+}
+
+.person-heading--inline {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.65rem;
+}
+
+.person-heading--below {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.person-email {
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 400 !important;
+  line-height: 1.4;
+  text-decoration: none;
+}
+
+.person-heading--inline .person-email::before {
+  content: "\00b7";
+  margin-right: 0.65rem;
+  color: var(--muted);
+}
+
 .person-role {
   color: var(--muted);
   font-size: 0.95rem;
