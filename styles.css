@@ -137,6 +137,7 @@ h3 {
 .brand-text {
   display: flex;
   flex-direction: column;
+  gap: 0.28rem;
   min-width: 0;
 }
 
@@ -462,7 +463,7 @@ h3 {
 }
 
 .person-portrait {
-  width: 8rem;
+  width: 9rem;
   aspect-ratio: 1 / 1;
   display: block;
   overflow: hidden;
