@@ -3,7 +3,16 @@
   const root = script.dataset.root;
   const member = script.dataset.member;
   const mode = script.dataset.mode || 'member';
+  const remote = script.dataset.remote === 'true';
   const members = ['sadok', 'serkan', 'maximilian', 'devender', 'yekta', 'riccardo', 'rebecca'];
+  const profileRoots = {
+    sadok: 'https://raw.githubusercontent.com/SDU-Data-and-Intelligence-Lab/sadok/master/data/publications',
+    maximilian: 'https://raw.githubusercontent.com/SDU-Data-and-Intelligence-Lab/maximilian/master/data/publications',
+    devender: 'https://raw.githubusercontent.com/SDU-Data-and-Intelligence-Lab/devender/master/data/publications',
+    yekta: 'https://raw.githubusercontent.com/SDU-Data-and-Intelligence-Lab/yekta/master/data/publications',
+    riccardo: 'https://raw.githubusercontent.com/SDU-Data-and-Intelligence-Lab/riccardo/master/data/publications',
+    rebecca: 'https://raw.githubusercontent.com/SDU-Data-and-Intelligence-Lab/rebecca/master/data/publications'
+  };
 
   function sortPublications(items) {
     return items.slice().sort((a, b) => Number(b.year) - Number(a.year) || a.title.localeCompare(b.title));
@@ -51,7 +60,7 @@
   }
 
   const requested = mode === 'archive' ? members : [member];
-  Promise.all(requested.map((slug) => fetch(root + '/' + slug + '.json').then((response) => {
+  Promise.all(requested.map((slug) => fetch((remote ? (profileRoots[slug] || root) : root) + '/' + slug + '.json').then((response) => {
     if (!response.ok) throw new Error('Could not load ' + slug + ' publications');
     return response.json();
   }))).then((lists) => {

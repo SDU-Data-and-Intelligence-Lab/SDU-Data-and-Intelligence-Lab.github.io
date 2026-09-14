@@ -1,7 +1,16 @@
 (function () {
   const script = document.currentScript;
   const root = script.dataset.root;
+  const remote = script.dataset.remote === 'true';
   const members = ['sadok', 'serkan', 'maximilian', 'devender', 'yekta', 'riccardo', 'rebecca'];
+  const profileRoots = {
+    sadok: 'https://raw.githubusercontent.com/SDU-Data-and-Intelligence-Lab/sadok/master/data/publications',
+    maximilian: 'https://raw.githubusercontent.com/SDU-Data-and-Intelligence-Lab/maximilian/master/data/publications',
+    devender: 'https://raw.githubusercontent.com/SDU-Data-and-Intelligence-Lab/devender/master/data/publications',
+    yekta: 'https://raw.githubusercontent.com/SDU-Data-and-Intelligence-Lab/yekta/master/data/publications',
+    riccardo: 'https://raw.githubusercontent.com/SDU-Data-and-Intelligence-Lab/riccardo/master/data/publications',
+    rebecca: 'https://raw.githubusercontent.com/SDU-Data-and-Intelligence-Lab/rebecca/master/data/publications'
+  };
   const directions = [
     'AI & Information Retrieval',
     'LLM-in-the-middle for Physical AI',
@@ -28,7 +37,7 @@
   }
 
   function loadMember(slug) {
-    return fetch(root + '/' + slug + '.json').then((response) => {
+    return fetch((remote ? (profileRoots[slug] || root) : root) + '/' + slug + '.json').then((response) => {
       if (!response.ok) throw new Error('Could not load ' + slug + ' publications');
       return response.json();
     }).then((items) => items.map((item) => ({
