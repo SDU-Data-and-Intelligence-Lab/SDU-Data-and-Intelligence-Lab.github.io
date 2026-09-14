@@ -511,13 +511,27 @@ h3 {
   font-size: 0.86rem;
   font-weight: 400 !important;
   line-height: 1.4;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
-.person-heading--inline .person-email::before {
-  content: "\00b7";
-  margin-right: 0.65rem;
+.person-role--inline {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.6rem;
+}
+
+.person-email-separator {
   color: var(--muted);
+}
+
+.person-email--below {
+  display: block;
+  margin-top: -0.15rem;
+}
+
+.person-email:hover {
+  text-decoration: underline !important;
 }
 
 .person-role {
