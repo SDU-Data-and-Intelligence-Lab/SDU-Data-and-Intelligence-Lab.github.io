@@ -494,18 +494,6 @@ h3 {
   min-width: 0;
 }
 
-.person-heading--inline {
-  display: flex;
-  align-items: baseline;
-  flex-wrap: wrap;
-  gap: 0.35rem 0.65rem;
-}
-
-.person-heading--below {
-  display: grid;
-  gap: 0.2rem;
-}
-
 .person-email {
   color: var(--muted);
   font-size: 0.86rem;
@@ -514,20 +502,9 @@ h3 {
   text-decoration: none !important;
 }
 
-.person-role--inline {
-  display: flex;
-  align-items: baseline;
-  flex-wrap: wrap;
-  gap: 0.35rem 0.6rem;
-}
-
-.person-email-separator {
-  color: var(--muted);
-}
-
 .person-email--below {
   display: block;
-  margin-top: -0.15rem;
+  margin-top: 0.1rem;
 }
 
 .person-email:hover {
