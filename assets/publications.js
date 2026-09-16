@@ -10,7 +10,6 @@
     maximilian: 'https://raw.githubusercontent.com/SDU-Data-and-Intelligence-Lab/maximilian/master/data/publications',
     devender: 'https://raw.githubusercontent.com/SDU-Data-and-Intelligence-Lab/devender/master/data/publications',
     yekta: 'https://raw.githubusercontent.com/SDU-Data-and-Intelligence-Lab/yekta/master/data/publications',
-    riccardo: 'https://raw.githubusercontent.com/SDU-Data-and-Intelligence-Lab/riccardo/master/data/publications',
     rebecca: 'https://raw.githubusercontent.com/SDU-Data-and-Intelligence-Lab/rebecca/master/data/publications'
   };
 

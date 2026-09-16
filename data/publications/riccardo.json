@@ -1,0 +1,51 @@
+[
+  {
+    "year": 2026,
+    "title": "Faithful or Findable? Evaluating LLM-Generated Metadata for RDF Dataset Search",
+    "authors": "Riccardo Terrenzi and Serkan Ayvaz",
+    "venue": "SynthIR Workshop, ACM SIGIR, 2026",
+    "url": "https://ricter22.github.io/publication/2026-faithful-or-findable"
+  },
+  {
+    "year": 2026,
+    "title": "PIPER: Content-Based Table Search via Profiling and LLM-Generated Pseudoqueries",
+    "authors": "Riccardo Terrenzi, Matteo Falconi, Serkan Ayvaz, and Pierluigi Plebani",
+    "venue": "Database and Expert Systems Applications (DEXA), 2026",
+    "url": "https://ricter22.github.io/publication/2026-piper"
+  },
+  {
+    "year": 2026,
+    "title": "Why Neighborhoods Matter: Traversal Context and Provenance in Agentic GraphRAG",
+    "authors": "Riccardo Terrenzi, Maximilian von Zastrow, and Serkan Ayvaz",
+    "venue": "GenAIK-NORA Workshop, IJCAI-ECAI, 2026",
+    "url": "https://ricter22.github.io/publication/2026-neighborhoods-matter"
+  },
+  {
+    "year": 2026,
+    "title": "A Reference Architecture for Agentic Hybrid Retrieval in Dataset Search",
+    "authors": "Riccardo Terrenzi, Phongsakon Mark Konrad, Tim Lukas Adam, and Serkan Ayvaz",
+    "venue": "SAML Workshop, IEEE International Conference on Software Architecture, 2026",
+    "url": "https://ricter22.github.io/publication/2026-agentic-hybrid-retrieval"
+  },
+  {
+    "year": 2026,
+    "title": "CAKE: Cloud Architecture Knowledge Evaluation of Large Language Models",
+    "authors": "Tim Lukas Adam, Phongsakon Mark Konrad, Riccardo Terrenzi, Florian Girardo Lukas, Rahime Yilmaz, Krzysztof Sierszecki, and Serkan Ayvaz",
+    "venue": "KDA-AI Workshop, IEEE International Conference on Software Architecture, 2026",
+    "url": "https://ricter22.github.io/publication/2026-cake"
+  },
+  {
+    "year": 2026,
+    "title": "Architecture Without Architects: How AI Coding Agents Shape Software Architecture",
+    "authors": "Phongsakon Mark Konrad, Tim Lukas Adam, Riccardo Terrenzi, and Serkan Ayvaz",
+    "venue": "SAGAI Workshop, IEEE International Conference on Software Architecture, 2026",
+    "url": "https://ricter22.github.io/publication/2026-architecture-without-architects"
+  },
+  {
+    "year": 2026,
+    "title": "The Open-Box Fallacy: Why AI Deployment Needs a Calibrated Verification Regime",
+    "authors": "Phongsakon Mark Konrad, Tim Lukas Adam, Ane Cathrine Holst Merrild, Riccardo Terrenzi, Rebecca De Rosa, Toygar Tanyel, and Serkan Ayvaz",
+    "venue": "arXiv preprint, 2026",
+    "url": "https://ricter22.github.io/publication/2026-open-box-fallacy"
+  }
+]
