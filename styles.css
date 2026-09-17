@@ -522,6 +522,7 @@ h3 {
   color: var(--muted);
   font-size: 0.95rem;
   line-height: 1.55;
+  max-width: 40ch;
 }
 
 .person-links {
