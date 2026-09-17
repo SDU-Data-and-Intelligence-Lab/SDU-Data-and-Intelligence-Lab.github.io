@@ -4,12 +4,13 @@
   const member = script.dataset.member;
   const mode = script.dataset.mode || 'member';
   const remote = script.dataset.remote === 'true';
-  const members = ['sadok', 'serkan', 'maximilian', 'devender', 'yekta', 'riccardo', 'rebecca'];
+  const members = ['sadok', 'serkan', 'maximilian', 'devender', 'yekta', 'riccardo', 'aisha', 'rebecca'];
   const profileRoots = {
     sadok: 'https://raw.githubusercontent.com/SDU-Data-and-Intelligence-Lab/sadok/master/data/publications',
     maximilian: 'https://raw.githubusercontent.com/SDU-Data-and-Intelligence-Lab/maximilian/master/data/publications',
     devender: 'https://raw.githubusercontent.com/SDU-Data-and-Intelligence-Lab/devender/master/data/publications',
     yekta: 'https://raw.githubusercontent.com/SDU-Data-and-Intelligence-Lab/yekta/master/data/publications',
+    aisha: 'https://raw.githubusercontent.com/SDU-Data-and-Intelligence-Lab/aisha/main/data/publications',
     rebecca: 'https://raw.githubusercontent.com/SDU-Data-and-Intelligence-Lab/rebecca/master/data/publications'
   };
 
