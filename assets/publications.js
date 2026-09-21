@@ -60,14 +60,53 @@
   }
 
   const requested = mode === 'archive' ? members : [member];
-  Promise.all(requested.map((slug) => fetch((remote ? (profileRoots[slug] || root) : root) + '/' + slug + '.json').then((response) => {
-    if (!response.ok) throw new Error('Could not load ' + slug + ' publications');
-    return response.json();
-  }))).then((lists) => {
+  const urls = requested.map((slug) =>
+    (remote ? (profileRoots[slug] || root) : root) + '/' + slug + '.json');
+  const cacheKey = 'lab-publications-v1:' + JSON.stringify(urls);
+  const validList = (items) => Array.isArray(items) && items.every((item) =>
+    item && typeof item.title === 'string' && typeof item.url === 'string' &&
+    typeof item.authors === 'string' && typeof item.venue === 'string' &&
+    Number.isFinite(Number(item.year)));
+  let cached = null;
+  try {
+    const saved = JSON.parse(localStorage.getItem(cacheKey));
+    if (Array.isArray(saved) && saved.length === urls.length && saved.every(validList)) {
+      cached = saved;
+    }
+  } catch (_) {
+    // Storage can be unavailable in private browsing.
+  }
+
+  function renderLists(lists) {
     const items = lists.flat();
     if (mode === 'archive') renderArchive(items);
     else renderMember(items);
+  }
+  if (cached) renderLists(cached);
+
+  Promise.all(urls.map(async (url, index) => {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 8000);
+    try {
+      const response = await fetch(url, { signal: controller.signal });
+      if (!response.ok) throw new Error('Could not load publications');
+      const items = await response.json();
+      if (!validList(items)) throw new Error('Invalid publication data');
+      return items;
+    } catch (error) {
+      if (cached) return cached[index];
+      throw error;
+    } finally {
+      clearTimeout(timeout);
+    }
+  })).then((lists) => {
+    renderLists(lists);
+    try {
+      localStorage.setItem(cacheKey, JSON.stringify(lists));
+    } catch (_) {
+      // Rendering does not depend on storage being available.
+    }
   }).catch(() => {
-    // The original HTML remains visible if data loading fails.
+    // Preserve the complete existing archive if a first-time request fails.
   });
 }());
