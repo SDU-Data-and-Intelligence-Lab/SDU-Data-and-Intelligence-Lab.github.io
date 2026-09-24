@@ -43,7 +43,10 @@
   function renderArchive(items) {
     const target = document.querySelector('.publication-shell');
     if (!target) return;
-    const unique = Array.from(new Map(items.filter((item) => Number(item.year) >= 2024).map((item) => [item.url, item])).values());
+    const unique = Array.from(new Map(items.filter((item) => {
+      const cutoff = item._member === 'serkan' ? 2023 : 2024;
+      return Number(item.year) >= cutoff;
+    }).map((item) => [item.url, item])).values());
     const years = [...new Set(unique.map((item) => Number(item.year)))].sort((a, b) => b - a);
     target.innerHTML = years.map((year) =>
       '<section class="publication-list-year">' +
@@ -78,7 +81,9 @@
   }
 
   function renderLists(lists) {
-    const items = lists.flat();
+    const items = mode === 'archive'
+      ? lists.flatMap((list, index) => list.map((item) => ({ ...item, _member: requested[index] })))
+      : lists.flat();
     if (mode === 'archive') renderArchive(items);
     else renderMember(items);
   }
