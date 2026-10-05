@@ -8,6 +8,13 @@
   },
   {
     "year": 2026,
+    "title": "Taxonomic and Spatial Geometry in Phytoplankton Monitoring Data",
+    "authors": "Ane Cathrine Holst Merrild, Serkan Ayvaz",
+    "venue": "Geometric Distributional Deep Learning Workshop at NeurIPS (accepted), 2026",
+    "url": "https://sayvaz-mmmi.github.io/publications"
+  },
+  {
+    "year": 2026,
     "title": "Self-Reports Do Not Identify Self-Models: An Identifiability Test for Counterfactual Reports",
     "authors": "Phongsakon Mark Konrad, Toygar Tanyel, Serkan Ayvaz",
     "venue": "Philosophy of Machine Learning Workshop, ICML (oral), 2026",
@@ -31,8 +38,8 @@
     "year": 2026,
     "title": "Decoded but Unused: Instruction Tuning Routes Moral Framing into the Judgment Readout",
     "authors": "Phongsakon Mark Konrad, Toygar Tanyel, Serkan Ayvaz",
-    "venue": "Mechanistic Interpretability Workshop, ICML, 2026",
-    "url": "https://sayvaz-mmmi.github.io/publications"
+    "venue": "Mechanistic Interpretability Workshop, ICML, 2026 · PDF",
+    "url": "https://openreview.net/forum?id=da9ylT2doy"
   },
   {
     "year": 2026,
