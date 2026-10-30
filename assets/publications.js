@@ -103,8 +103,7 @@
       if (!validList(items)) throw new Error('Invalid publication data');
       return items;
     } catch (error) {
-      if (cached) return cached[index];
-      throw error;
+      return cached?.[index] || [];
     } finally {
       clearTimeout(timeout);
     }
