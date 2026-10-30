@@ -2,71 +2,211 @@
   {
     "year": 2026,
     "title": "Routing Subspaces: Auditing Evaluation-to-Deployment Mismatch in Fine-Tuned Language Models",
-    "authors": "Phongsakon Mark Konrad, Toygar Tanyel, Serkan Ayvaz",
-    "venue": "NeurIPS, Main Track (accepted), 2026",
-    "url": "https://scholar.google.com.tr/citations?view_op=view_citation&hl=en&user=ihaclQQAAAAJ&sortby=pubdate&citation_for_view=ihaclQQAAAAJ:1qzjygNMrQYC"
+    "authors": "PM Konrad, T Tanyel, S Ayvaz",
+    "venue": "NeurIPS 2026, Main Track (accepted)",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ihaclQQAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=ihaclQQAAAAJ:1qzjygNMrQYC"
   },
   {
     "year": 2026,
     "title": "Taxonomic and Spatial Geometry in Phytoplankton Monitoring Data",
     "authors": "Ane Cathrine Holst Merrild, Serkan Ayvaz",
-    "venue": "Geometric Distributional Deep Learning Workshop at NeurIPS (accepted), 2026",
+    "venue": "Geometric Distributional Deep Learning Workshop at NeurIPS (accepted)",
     "url": "https://sayvaz-mmmi.github.io/publications"
   },
   {
     "year": 2026,
-    "title": "Self-Reports Do Not Identify Self-Models: An Identifiability Test for Counterfactual Reports",
-    "authors": "Phongsakon Mark Konrad, Toygar Tanyel, Serkan Ayvaz",
-    "venue": "Philosophy of Machine Learning Workshop, ICML (oral), 2026",
-    "url": "https://sayvaz-mmmi.github.io/publications"
+    "title": "Challenges in Deep Learning-Based Small Organ Segmentation A Benchmarking Perspective for Medical Research with Limited Datasets",
+    "authors": "P Konrad, AA Popa, Y Sabzehmeidani, L Zhong, M Tripathy, ...",
+    "venue": "Biomedical Signal Processing and Control 128 (111226), https://doi.org/10 …",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ihaclQQAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=ihaclQQAAAAJ:XiSMed-E-HIC"
   },
   {
     "year": 2026,
-    "title": "Challenges in Deep Learning-Based Small Organ Segmentation",
-    "authors": "Phongsakon Mark Konrad, Andrei-Alexandru Popa, Yaser Sabzehmeidani, Liang Zhong, Madhulika Tripathy, Andrei Constantinescu, Elisa A. Liehn, Serkan Ayvaz",
-    "venue": "Biomedical Signal Processing and Control, 2026",
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ihaclQQAAAAJ&citation_for_view=ihaclQQAAAAJ:XiSMed-E-HIC"
+    "title": "CAKE: Cloud Architecture Knowledge Evaluation of Large Language Models",
+    "authors": "TL Adam, PM Konrad, R Terrenzi, FG Lukas, R Yilmaz, K Sierszecki, ...",
+    "venue": "IEEE 23rd International Conference on Software Architecture Companion (ICSA …",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ihaclQQAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=ihaclQQAAAAJ:bnK-pcrLprsC"
   },
   {
     "year": 2026,
-    "title": "Data-driven warranty modeling for multi-state deteriorating products with stochastic repair times",
-    "authors": "P. Niloofar, H. Vahdani, S. Ayvaz, S. Lazarova-Molnar",
-    "venue": "Reliability Engineering & System Safety, 112679, 2026",
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ihaclQQAAAAJ&citation_for_view=ihaclQQAAAAJ:B3FOqHPlNUQC"
+    "title": "A Reference Architecture for Agentic Hybrid Retrieval in Dataset Search",
+    "authors": "R Terrenzi, PM Konrad, TL Adam, S Ayvaz",
+    "venue": "IEEE 23rd International Conference on Software Architecture Companion (ICSA …",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ihaclQQAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=ihaclQQAAAAJ:5Ul4iDaHHb8C"
   },
   {
     "year": 2026,
-    "title": "Decoded but Unused: Instruction Tuning Routes Moral Framing into the Judgment Readout",
-    "authors": "Phongsakon Mark Konrad, Toygar Tanyel, Serkan Ayvaz",
-    "venue": "Mechanistic Interpretability Workshop, ICML, 2026 - PDF",
-    "url": "https://openreview.net/forum?id=da9ylT2doy"
+    "title": "PIPER: Content-Based Table Search via Profiling and LLM-Generated Pseudoqueries",
+    "authors": "R Terrenzi, M Falconi, S Ayvaz, P Plebani",
+    "venue": "International Conference on Database and Expert Systems Applications, 197-212",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ihaclQQAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=ihaclQQAAAAJ:D_sINldO8mEC"
+  },
+  {
+    "year": 2026,
+    "title": "Faithful or Findable? Evaluating LLM-Generated Metadata for RDF Dataset Search",
+    "authors": "R Terrenzi, S Ayvaz",
+    "venue": "arXiv preprint arXiv:2607.05970",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ihaclQQAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=ihaclQQAAAAJ:kRWSkSYxWN8C"
+  },
+  {
+    "year": 2026,
+    "title": "Architecture Without Architects: How AI Coding Agents Shape Software Architecture",
+    "authors": "PM Konrad, TL Adam, R Terrenzi, S Ayvaz",
+    "venue": "2026 IEEE 23rd International Conference on Software Architecture Companion …",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ihaclQQAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=ihaclQQAAAAJ:XiVPGOgt02cC"
+  },
+  {
+    "year": 2026,
+    "title": "Comparing post-acquisition methods for Raman-based mineral identification of particles in yellow earth pigments",
+    "authors": "MA Johns, F Handberg, H Groß, T Boyadzhieva, A Laghrissi, T Zeeck, ...",
+    "venue": "Spectrochimica Acta Part A: Molecular and Biomolecular Spectroscopy, 128238",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ihaclQQAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=ihaclQQAAAAJ:BrmTIyaxlBUC"
   },
   {
     "year": 2026,
     "title": "Why Neighborhoods Matter: Traversal Context and Provenance in Agentic GraphRAG",
-    "authors": "R. Terrenzi, M. von Zastrow, S. Ayvaz",
-    "venue": "GenAIK (Generative AI and Knowledge Graphs) workshop, IJCAI-ECAI, 2026",
+    "authors": "R Terrenzi, M von Zastrow, S Ayvaz",
+    "venue": "arXiv preprint arXiv:2605.15109",
     "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ihaclQQAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=ihaclQQAAAAJ:eJXPG6dFmWUC"
+  },
+  {
+    "year": 2026,
+    "title": "Acceptance Cards: A Four-Diagnostic Standard for Safe Fine-Tuning Defense Claims",
+    "authors": "PM Konrad, T Tanyel, S Ayvaz",
+    "venue": "arXiv preprint arXiv:2605.10575",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ihaclQQAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=ihaclQQAAAAJ:VOx2b1Wkg3QC"
+  },
+  {
+    "year": 2026,
+    "title": "The Open-Box Fallacy: Why AI Deployment Needs a Calibrated Verification Regime",
+    "authors": "PM Konrad, TL Adam, ACH Merrild, R Terrenzi, R De Rosa, T Tanyel, ...",
+    "venue": "arXiv preprint arXiv:2605.10601",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ihaclQQAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=ihaclQQAAAAJ:fQNAKQ3IYiAC"
+  },
+  {
+    "year": 2026,
+    "title": "Non-Destructive Prediction of Fruit Ripeness and Firmness Using Hyperspectral Imaging and Lightweight Machine Learning Models",
+    "authors": "PM Konrad, C Kunstmann-Olsen, J Fiutowski, S Ayvaz",
+    "venue": "arXiv preprint arXiv:2604.22788",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ihaclQQAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=ihaclQQAAAAJ:LPZeul_q3PIC"
+  },
+  {
+    "year": 2026,
+    "title": "Data-driven warranty modeling for multi-state deteriorating products with stochastic repair times",
+    "authors": "P Niloofar, H Vahdani, S Ayvaz, S Lazarova-Molnar",
+    "venue": "Reliability Engineering & System Safety, 112679",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ihaclQQAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=ihaclQQAAAAJ:B3FOqHPlNUQC"
+  },
+  {
+    "year": 2026,
+    "title": "GenAI Integration into Engineering Education: A Case Study of an Introductory Undergraduate Engineering Course",
+    "authors": "K Kozan, O Keles, S Jian, S Ayvaz, K Sierszecki, S Joo",
+    "venue": "arXiv preprint arXiv:2603.13269",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ihaclQQAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=ihaclQQAAAAJ:4fKUyHm3Qg0C"
+  },
+  {
+    "year": 2026,
+    "title": "A Path Already Walked: On Inheriting Network-Neuroscience Tools for Mechanistic Interpretability",
+    "authors": "PM Konrad, T Tanyel, S Ayvaz",
+    "venue": "Mechanistic Interpretability Workshop at ICML 2026",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ihaclQQAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=ihaclQQAAAAJ:mvPsJ3kp5DgC"
+  },
+  {
+    "year": 2026,
+    "title": "Decoded but Unused: Instruction Tuning Routes Moral Framing into the Judgment Readout",
+    "authors": "PM Konrad, T Tanyel, S Ayvaz",
+    "venue": "Mechanistic Interpretability Workshop at ICML 2026",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ihaclQQAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=ihaclQQAAAAJ:q3oQSFYPqjQC"
+  },
+  {
+    "year": 2026,
+    "title": "Self-Reports Do Not Identify Self-Models: An Identifiability Test for Counterfactual Reports",
+    "authors": "PM Konrad, T Tanyel, S Ayvaz",
+    "venue": "ICML 2026 Workshop: Philosophy Meets Machine Learning",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ihaclQQAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=ihaclQQAAAAJ:eflP2zaiRacC"
+  },
+  {
+    "year": 2025,
+    "title": "A big data analytics system for predicting suicidal ideation in real-time based on social media streaming data",
+    "authors": "MA Allayla, S Ayvaz",
+    "venue": "14th International Conference on Data Science, Technology and Applications …",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ihaclQQAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=ihaclQQAAAAJ:dshw04ExmUIC"
+  },
+  {
+    "year": 2025,
+    "title": "Poe-ml: An automated pipeline for optimization and evaluation of machine learning",
+    "authors": "MC Nielsen, S Ayvaz",
+    "venue": "2025 IEEE 22nd International Conference on Software Architecture Companion …",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ihaclQQAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=ihaclQQAAAAJ:OU6Ihb5iCvQC"
+  },
+  {
+    "year": 2025,
+    "title": "Beyond Major Floods: Deep Learning for Detecting Shallow Water Inundation in Agricultural Areas",
+    "authors": "PM Konrad, T Tanyel, S Ayvaz",
+    "venue": "Procedia Computer Science 270, 301-310",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ihaclQQAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=ihaclQQAAAAJ:Tiz5es2fbqcC"
+  },
+  {
+    "year": 2025,
+    "title": "Benchmarking Post-Acquisition Methods for Raman-Based Mineral Identification in Yellow Earth Pigments",
+    "authors": "MA Johns, F Handberg, T Boyadzhieva, S Ayvaz, C Kunstmann, ...",
+    "venue": "Available at SSRN 5390474",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ihaclQQAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=ihaclQQAAAAJ:u9iWguZQMMsC"
+  },
+  {
+    "year": 2024,
+    "title": "Enhancing retrieval-augmented generation accuracy with dynamic chunking and optimized vector search",
+    "authors": "D Tanyildiz, S Ayvaz, MF Amasyali",
+    "venue": "Orclever Proceedings of Research and Development 5 (1), 215-225",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ihaclQQAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=ihaclQQAAAAJ:SP6oXDckpogC"
+  },
+  {
+    "year": 2024,
+    "title": "A Sentiment Analysis of Emergency Online Special Education after COVID Mass Vaccinations Started",
+    "authors": "K Kozan, S Ayvaz, K Grimmet",
+    "venue": "Turkish Special Education Journal: International",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ihaclQQAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=ihaclQQAAAAJ:UxriW0iASnsC"
+  },
+  {
+    "year": 2024,
+    "title": "Developing linguistic patterns to mitigate inherent human bias in offensive language detection",
+    "authors": "T Tanyel, B Alkurdi, S Ayvaz",
+    "venue": "Turkish Journal of Electrical Engineering and Computer Sciences 32 (6), 829-848",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ihaclQQAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=ihaclQQAAAAJ:nb7KW1ujOQ8C"
   },
   {
     "year": 2023,
     "title": "Remaining Useful Lifetime Prediction for Predictive Maintenance in Manufacturing",
-    "authors": "Bernar Tasci, Ammar Omar, Serkan Ayvaz",
-    "venue": "Computers & Industrial Engineering, 2023",
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ihaclQQAAAAJ&citation_for_view=ihaclQQAAAAJ:4OULZ7Gr8RgC"
+    "authors": "B Taşcı, A Omar, S Ayvaz",
+    "venue": "Computers & Industrial Engineering",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ihaclQQAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=ihaclQQAAAAJ:4OULZ7Gr8RgC"
   },
   {
-    "year": 2021,
-    "title": "Predictive Maintenance System for Production Lines in Manufacturing: A Machine Learning Approach Using IoT Data in Real-Time",
-    "authors": "Serkan Ayvaz, Korhan Alpay",
-    "venue": "Expert Systems with Applications, 114598, 2021",
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ihaclQQAAAAJ&citation_for_view=ihaclQQAAAAJ:YFjsv_pBGBYC"
+    "year": 2023,
+    "title": "Beyond known reality: Exploiting counterfactual explanations for medical research",
+    "authors": "T Tanyel, S Ayvaz, B Keserci",
+    "venue": "arXiv preprint arXiv:2307.02131",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ihaclQQAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=ihaclQQAAAAJ:D03iK_w7-QYC"
   },
   {
-    "year": 2019,
-    "title": "An improved method of locality-sensitive hashing for scalable instance matching",
-    "authors": "Mehmet Aydar, Serkan Ayvaz",
-    "venue": "Knowledge and Information Systems 58(2), 275-294, 2019",
-    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ihaclQQAAAAJ&citation_for_view=ihaclQQAAAAJ:ULOm3_A8WrAC"
+    "year": 2023,
+    "title": "A blockchain-based secure mutual authentication system for e-government services",
+    "authors": "HH Al-Ameri, S Ayvaz",
+    "venue": "2023 3rd International Scientific Conference of Engineering Sciences (ISCES …",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ihaclQQAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=ihaclQQAAAAJ:P5F9QuxV20EC"
+  },
+  {
+    "year": 2023,
+    "title": "A Hybrid and Scalable Sentiment Analysis Framework: Case of Russo-Ukrainian War",
+    "authors": "MA Allayla, S Ayvaz",
+    "venue": "2023 3rd International Scientific Conference of Engineering Sciences (ISCES …",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ihaclQQAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=ihaclQQAAAAJ:1sJd4Hv_s6UC"
+  },
+  {
+    "year": 2023,
+    "title": "Sentiments towards Emergency Remote Teaching on Twitter: A Longitudinal Comparative Sentiment Analysis",
+    "authors": "S Caskurlu, S Ayvaz, K Kozan",
+    "venue": "Research on Education and Psychology 7 (Special Issue), 1-21",
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ihaclQQAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=ihaclQQAAAAJ:cFHS6HbyZ2cC"
   }
 ]
