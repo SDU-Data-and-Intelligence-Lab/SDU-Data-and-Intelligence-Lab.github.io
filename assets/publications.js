@@ -4,7 +4,8 @@
   const member = script.dataset.member;
   const mode = script.dataset.mode || 'member';
   const remote = script.dataset.remote === 'true';
-  const members = ['sadok', 'serkan', 'maximilian', 'devender', 'yekta', 'riccardo', 'aisha', 'rebecca'];
+  const members = ['sadok', 'serkan', 'aisha', 'maximilian', 'devender', 'yekta', 'riccardo', 'rebecca'];
+  const memberOrder = new Map(members.map((slug, index) => [slug, index]));
   const profileRoots = {
     sadok: 'https://raw.githubusercontent.com/SDU-Data-and-Intelligence-Lab/sadok/master/data/publications',
     maximilian: 'https://raw.githubusercontent.com/SDU-Data-and-Intelligence-Lab/maximilian/master/data/publications',
@@ -15,7 +16,11 @@
   };
 
   function sortPublications(items) {
-    return items.slice().sort((a, b) => Number(b.year) - Number(a.year) || a.title.localeCompare(b.title));
+    return items.slice().sort((a, b) =>
+      Number(b.year) - Number(a.year) ||
+      (memberOrder.get(a._member) ?? Number.MAX_SAFE_INTEGER) - (memberOrder.get(b._member) ?? Number.MAX_SAFE_INTEGER) ||
+      a.title.localeCompare(b.title)
+    );
   }
 
   function escapeHtml(value) {
@@ -43,10 +48,9 @@
   function renderArchive(items) {
     const target = document.querySelector('.publication-shell');
     if (!target) return;
-    const unique = Array.from(new Map(items.filter((item) => {
-      const cutoff = item._member === 'serkan' ? 2023 : 2024;
-      return Number(item.year) >= cutoff;
-    }).map((item) => [item.url, item])).values());
+    const unique = Array.from(new Map(items
+      .filter((item) => Number(item.year) >= 2023)
+      .map((item) => [item.title.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim(), item])).values());
     const years = [...new Set(unique.map((item) => Number(item.year)))].sort((a, b) => b - a);
     target.innerHTML = years.map((year) =>
       '<section class="publication-list-year">' +
@@ -65,7 +69,7 @@
   const requested = mode === 'archive' ? members : [member];
   const urls = requested.map((slug) =>
     (remote ? (profileRoots[slug] || root) : root) + '/' + slug + '.json');
-  const cacheKey = 'lab-publications-v1:' + JSON.stringify(urls);
+  const cacheKey = 'lab-publications-v2:' + JSON.stringify(urls);
   const validList = (items) => Array.isArray(items) && items.every((item) =>
     item && typeof item.title === 'string' && typeof item.url === 'string' &&
     typeof item.authors === 'string' && typeof item.venue === 'string' &&

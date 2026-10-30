@@ -6,6 +6,7 @@ const fallbackUrl = 'https://sayvaz-mmmi.github.io/publications';
 
 function decodeHtml(value) {
   return value
+    .replace(/<!--[\s\S]*?-->/g, '')
     .replace(/<[^>]+>/g, '')
     .replace(/&amp;/g, '&')
     .replace(/&quot;/g, '"')
@@ -13,6 +14,7 @@ function decodeHtml(value) {
     .replace(/&lt;/g, '<')
     .replace(/&gt;/g, '>')
     .replace(/&nbsp;/g, ' ')
+    .replace(/·/g, ' - ')
     .replace(/\s+/g, ' ')
     .trim();
 }
@@ -32,7 +34,9 @@ const selectedHtml = html.slice(listStart, listEnd);
 const articles = [...selectedHtml.matchAll(/<article[^>]*>([\s\S]*?)<\/article>/g)];
 const publications = articles.map((match) => {
   const article = match[1];
-  const titleMatch = article.match(/<h3>(?:<a[^>]+href="([^"]+)"[^>]*>)?([\s\S]*?)(?:<\/a>)?<\/h3>/);
+  const headingMatch = article.match(/<h3[^>]*>([\s\S]*?)<\/h3>/);
+  const hrefMatch = headingMatch?.[1].match(/<a[^>]+href="([^"]+)"[^>]*>/);
+  const titleMatch = headingMatch && [headingMatch[0], hrefMatch?.[1] || '', headingMatch[1].replace(/<a[^>]*>/, '').replace(/<\/a>/, '')];
   const authorsMatch = article.match(/<p class="paper-authors">([\s\S]*?)<\/p>/);
   const venueMatch = article.match(/<p class="paper-venue">([\s\S]*?)<\/p>/);
   const venue = decodeHtml(venueMatch?.[1] || '');
@@ -47,7 +51,7 @@ const publications = articles.map((match) => {
     title: decodeHtml(titleMatch[2]),
     authors: decodeHtml(authorsMatch[1]),
     venue,
-    url: titleMatch[1] || fallbackUrl
+    url: titleMatch[1] ? decodeHtml(titleMatch[1]) : fallbackUrl
   };
 });
 
