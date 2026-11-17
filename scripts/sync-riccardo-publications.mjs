@@ -20,23 +20,21 @@ function decodeHtml(value) {
 const response = await fetch(sourceUrl);
 if (!response.ok) throw new Error('Could not fetch Riccardo\'s publications: ' + response.status);
 const html = await response.text();
-const articles = [...html.matchAll(/<article class="archive__item"[\s\S]*?<\/article>/g)];
+const articles = [...html.matchAll(/<article class="publication-entry"[\s\S]*?<\/article>/g)];
 
 const publications = articles.map((match) => {
   const article = match[0];
-  const titleMatch = article.match(/<h2 class="archive__item-title"[\s\S]*?<a href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/);
-  const publishedMatch = article.match(/<p>Published in ([\s\S]*?)<\/p>/);
-  const citationMatch = article.match(/Recommended citation:\s*([\s\S]*?)<br\s*\/?\s*>/i);
-  const published = decodeHtml(publishedMatch?.[1] || '');
-  const citation = decodeHtml(citationMatch?.[1] || '');
+  const titleMatch = article.match(/<h2[^>]*><a href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/);
+  const authorsMatch = article.match(/<p class="publication-authors">([\s\S]*?)<\/p>/);
+  const venueMatch = article.match(/<p class="publication-venue">([\s\S]*?)<\/p>/);
+  const published = decodeHtml(venueMatch?.[1] || '');
+  const authors = decodeHtml(authorsMatch?.[1] || '').replace(/\s+/g, ' ');
   const yearMatch = published.match(/\b(20\d{2})\b/);
 
-  if (!titleMatch || !publishedMatch || !yearMatch) {
+  if (!titleMatch || !authorsMatch || !venueMatch || !yearMatch) {
     throw new Error('Could not parse a Riccardo publication');
   }
 
-  const citationYear = citation.search(/\(20\d{2}\)/);
-  const authors = citationYear >= 0 ? citation.slice(0, citationYear).trim().replace(/[.]$/, '') : '';
   return {
     year: Number(yearMatch[1]),
     title: decodeHtml(titleMatch[2]),
@@ -44,7 +42,7 @@ const publications = articles.map((match) => {
     venue: published,
     url: new URL(titleMatch[1], sourceUrl).href
   };
-});
+}).filter((item) => item.year >= 2023);
 
 if (!publications.length) throw new Error('No Riccardo publications were parsed');
 
